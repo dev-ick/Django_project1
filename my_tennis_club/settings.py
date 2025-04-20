@@ -18,7 +18,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'temporary-secret-key')
 DEBUG = os.environ.get('DEBUG', 'True') == 'True'  # True locally, False on Render
 
 # Allowed websites
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'django-project1-7e46.onrender.com']
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
     ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
