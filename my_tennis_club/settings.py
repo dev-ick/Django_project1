@@ -99,7 +99,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Your static files folder (if any)
+    BASE_DIR / "mystaticfiles",  # Your static files folder (if any)
 ]
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # Where Render collects static files
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
